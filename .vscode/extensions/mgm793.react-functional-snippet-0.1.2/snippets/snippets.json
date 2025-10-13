@@ -1,0 +1,101 @@
+{
+	"React Function component (JS)": {
+		"scope": "javascript",
+		"prefix": "rf",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';\n",
+			"const ${TM_FILENAME_BASE/[^0-9^a-z]//gi} = props => {",
+			"\treturn <div></div>;",
+			"};\n",
+			"${TM_FILENAME_BASE/[^0-9^a-z]//gi}.propTypes = {};\n",
+			"export { ${TM_FILENAME_BASE/[^0-9^a-z]//gi} };"
+
+		],
+		"description": "React Function"
+	},
+	"React Function component (TS)": {
+		"scope": "typescript",
+		"prefix": "rfts",
+		"body": [
+			"import React from 'react';\n",
+			"type Props = {};\n",
+			"const ${TM_FILENAME_BASE/[^0-9^a-z]//gi} = (props : Props) => {",
+			"\treturn <div></div>;",
+			"};\n",
+			"export { ${TM_FILENAME_BASE/[^0-9^a-z]//gi} };"
+
+		],
+		"description": "React Function"
+	},
+	"React state (JS)": {
+		"scope": "javascript",
+		"prefix": "rs",
+		"body": [
+			"const [${1:state}, set${2:State}] = useState(${3:InitialState});"
+		],
+		"description": "React State"
+	},
+	"React state (TS)": {
+		"scope": "typescript",
+		"prefix": "rsts",
+		"body": [
+			"const [${1:state}, set${2:State}] = useState<${3:Type}>(${4:InitialState});"
+		],
+		"description": "React State"
+	},
+	"React useReducer (JS, TS)": {
+		"scope": "javascript, typescript",
+		"prefix": "rur",
+		"body": [
+			"const [${1:State}, ${2:dispatch}] = useReducer(${3:Reducer},${4:InitialCount},${5:Init});"
+		],
+		"description": "React State"
+	},
+	"React useEffect (JS, TS)": {
+		"scope": "javascript, typescript",
+		"prefix": "rue",
+		"body":[
+			"useEffect(${1:Function}, [${2:UpdateParams}]);"
+		]
+	},
+	"React useMemo (JS, TS)": {
+		"scope": "javascript, typescript",
+		"prefix": "rum",
+		"body":[
+			"const ${1:functionName} = useMemo(${2:Function}, [${3:UpdateParams}]);"
+		]
+	},
+	"React Function component with state (JS)": {
+		"scope": "javascript",
+		"prefix": "rfs",
+		"body": [
+			"import React, {useState} from 'react';",
+			"import PropTypes from 'prop-types';\n",
+			"const ${TM_FILENAME_BASE/[^0-9^a-z]//gi} = props => {",
+			"const [${1:state}, set${2:State}] = useState(${3:InitialState});",
+			"\treturn <div></div>;",
+			"};\n",
+			"${TM_FILENAME_BASE/[^0-9^a-z]//gi}.propTypes = {};\n",
+			"export { ${TM_FILENAME_BASE/[^0-9^a-z]//gi} };"
+
+		],
+		"description": "React Function with state"
+	},
+	"React Function component with state (TS)": {
+		"scope": "typescript",
+		"prefix": "rfsts",
+		"body": [
+			"import React, {useState} from 'react';\n",
+			"type Props = {};\n",
+			"const ${TM_FILENAME_BASE/[^0-9^a-z]//gi} = (props : Props) => {",
+			"const [${1:state}, set${2:State}] = useState<${3:Type}>(${4:InitialState});",
+			"\treturn <div></div>;",
+			"};\n",
+			"${TM_FILENAME_BASE/[^0-9^a-z]//gi}.propTypes = {};\n",
+			"export { ${TM_FILENAME_BASE/[^0-9^a-z]//gi} };"
+
+		],
+		"description": "React Function with state"
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"name": "react-functional-snippet",
+	"displayName": "React Functional Snippet",
+	"description": "Snippets for react 2019/2020",
+	"publisher": "mgm793",
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/mgm793/react-snippets"
+	},
+	"version": "0.1.2",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"icon": "images/react.png",
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"__metadata": {
+		"id": "e4d80cfc-3ce5-4ee7-926b-d44dfaed6941",
+		"publisherId": "59c9a25f-2b30-472c-907d-59321b9a7220",
+		"publisherDisplayName": "Marc Garcia i Mullon",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1699935254007,
+		"preRelease": false
+	}
+}
